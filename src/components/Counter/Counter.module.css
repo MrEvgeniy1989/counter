@@ -1,6 +1,14 @@
+.app {
+    display: flex;
+    margin: 0 -5px;
+}
+
 .counter {
-    width: 700px;
-    height: 400px;
+    flex: 1 1 auto;
+    margin: 0 25px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
     border: 5px solid #00d0ff;
     border-radius: 16px;
     display: flex;
@@ -12,12 +20,86 @@
 
 .button-container {
     width: 100%;
-    height: 150px;
-    padding: 20px 30px;
+    height: 100px;
+    padding: 20px 15px;
+    margin: 20px;
     display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
     border: 5px solid #00d0ff;
     border-radius: 16px;
+}
+
+.settingsFull {
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+    border: 5px solid #00d0ff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.counterSettings {
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*flex-direction: column;*/
+
+    border-radius: 16px;
+    border: 5px solid #00d0ff;
+    padding: 10px 15px;
+    color: #00d0ff;
+    font-size: 32px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0 35px;*/
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+input {
+    height: 35px;
+    width: 220px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 6px;
+    border: 5px solid #00d0ff;
+    outline: none
+}
+
+.set-container {
+    width: 100%;
+    height: 100px;
+    padding: 20px 15px;
+    margin: 15px 15px 5px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #00d0ff;
+    border-radius: 16px;
+}
+
+.setButton {
+    width: 50%;
+    height: 70px;
+    background-color: #00d0ff;
+    border-radius: 16px;
+    font-size: 52px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
 }
